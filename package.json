@@ -1,0 +1,74 @@
+{
+  "name": "dsh-natsci-writing",
+  "version": "1.1.0",
+  "description": "NatSci writing studio: a sidebar workbench and a bilingual library (NatSci-Writing-skills 1.2.6.2) for manuscripts, academic reports, figure sets, reviewer responses and journal formatting.",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "scientific-writing",
+    "academic-writing",
+    "manuscript",
+    "figure",
+    "nature",
+    "science",
+    "skills"
+  ],
+  "homepage": "https://github.com/Travis13197/dsh-natsci-writing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travis13197/dsh-natsci-writing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Travis13197/dsh-natsci-writing/issues"
+  },
+  "author": "Travis13197",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "library",
+    "locale/*.json",
+    "docs",
+    "scripts",
+    "distribution",
+    "CHANGELOG.md",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node scripts/selftest.mjs",
+    "build:index": "node scripts/build-index.mjs"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Bundle patch: one Host row serves the NatSci library tool to every Session in
+# the profile; the Client half adds the sidebar entry and the studio panel.
+- insert:
+    - id: natsci-writing
+      name: 'dsh-natsci-writing'
