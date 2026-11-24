@@ -12,7 +12,7 @@ academic reports, submission-grade figure sets, reviewer responses and journal f
 
 ## 中文速览
 
-侧栏「写作台」把科研写作的五个交付场景（完整论文、投稿图件、学术报告、审稿回复、润色与期刊格式）
+侧栏「Nat-Sci-写作台」把Nature、Science顶刊科研写作的五个场景（写完整论文、完成投稿终版图、进行学术报告、对审稿意见进行回复、润色与调整期刊格式）
 变成一键起手：点一下就把可编辑的提示词填进新会话。
 
 - 内置规则库：英文 26 份、中文 27 份，每种语言 19 个模板，外加 Python / R 起手代码。
