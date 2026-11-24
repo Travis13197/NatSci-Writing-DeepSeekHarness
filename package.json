@@ -1,6 +1,6 @@
 {
   "name": "dsh-natsci-writing",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "NatSci writing studio: a sidebar workbench and a bilingual (English/Chinese) scientific-writing library for manuscripts, academic reports, figure sets, reviewer responses and journal formatting.",
   "keywords": [
     "deepseek",

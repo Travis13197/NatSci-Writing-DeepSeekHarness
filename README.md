@@ -83,7 +83,7 @@ dsh plugin --profile <profile> add dsh-natsci-writing
 1. **Restart the profile** — quit and reopen Desktop, or stop and restart `dsh web`.
 2. **Reload the page.** A **Studio** (写作台) icon appears in the left sidebar between
    *Plugins* and *Scheduled tasks*.
-3. **Verify:** open **Plugins**, confirm *NatSci writing studio* `1.1.2` is enabled;
+3. **Verify:** open **Plugins**, confirm *NatSci writing studio* `1.1.3` is enabled;
    click the Studio icon and check that five deliverable cards and the rule index
    appear; in any chat, ask the agent to call `natsci_studio` with
    `{ "action": "catalog" }`.
@@ -143,7 +143,12 @@ sidebar, plugin-market, javascript
 
 `package.json` carries the same vocabulary as npm keywords. The bundle also ships
 `distribution/index.json`, a ready-to-host plugin index: publish `distribution/` on any static
-HTTPS host and others can add that URL under Plugins → Discover → Add index source.
+HTTPS host and others can add that URL under Plugins → Discover → Add index source. The
+included Pages workflow publishes it at
+`https://Travis13197.github.io/NatSci-Writing-DeepSeekHarness/index.json` once
+**Settings → Pages → Source: GitHub Actions** is enabled; rebuild it with
+`node scripts/build-index.mjs` after a version bump, or `--source=npm` once the package is
+on npm.
 
 ## License
 

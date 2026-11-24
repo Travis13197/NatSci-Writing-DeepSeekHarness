@@ -70,7 +70,7 @@ dsh plugin --profile <profile> add dsh-natsci-writing
 
 1. **重启该 profile**：桌面端退出后重开；命令行停止后重新执行 `dsh web`。
 2. **刷新页面**：左侧栏会出现 **写作台** 图标（位于「插件」与「定时任务」之间）。
-3. **确认可用**：插件页里能看到 *NatSci writing studio* `1.1.2` 已启用；点「写作台」能看到五张起手卡和规则索引；
+3. **确认可用**：插件页里能看到 *NatSci writing studio* `1.1.3` 已启用；点「写作台」能看到五张起手卡和规则索引；
    在任意会话里让 Agent 调用 `natsci_studio`，参数 `{ "action": "catalog" }`。
 
 ### 更新与卸载
@@ -103,7 +103,10 @@ Desktop 自带环境没有 `PATH` 上的 `node`，用应用自身的可执行文
   `peer-review`、`publishing`、`prompt-library`、`skills`、`sidebar`、`plugin-market`、`javascript`。
 - `package.json` 的 `keywords` 与上面同一套词，供 npm 搜索使用。
 - `distribution/index.json` 是可直接托管的插件索引：把 `distribution/` 发布到任意静态 HTTPS 主机，
-  其他人把该 URL 加进「插件 → 发现 → 添加索引源」即可浏览安装。
+  其他人把该 URL 加进「插件 → 发现 → 添加索引源」即可浏览安装。仓库自带 Pages 工作流，在
+  **Settings → Pages → Source: GitHub Actions** 打开后会自动发布到
+  `https://Travis13197.github.io/NatSci-Writing-DeepSeekHarness/index.json`。
+  版本变更后运行 `node scripts/build-index.mjs` 重建；发布到 npm 之后改用 `--source=npm`。
 
 ## 许可证
 

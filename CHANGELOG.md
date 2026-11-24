@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.3 — 2026-11-24
+
+- `distribution/index.json` can now list a **Git source** (`git+…github…git#<commit>`), so
+  the self-hosted index is installable before the package reaches npm; `--source=npm`
+  switches to the registry after `pnpm publish`. `scripts/build-index.mjs` reads the
+  commit from `.git` without spawning git.
+- New `.github/workflows/pages.yml` publishes `distribution/` to GitHub Pages, giving the
+  plugin index a stable URL.
+- READMEs document both index source modes and the Pages one-time setup.
+- Selftest 135 checks unchanged.
+
 ## 1.1.2 — 2026-11-24
 
 - README gains a step-by-step install guide for both languages: prerequisites, four
