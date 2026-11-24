@@ -46,16 +46,14 @@ metadata:
 - references/perspective-and-insight-zh.md：Perspective 智识中心、发现序列、推测与问责、形式内容、审核。
 - references/nature-section-craft-zh.md：Nature 摘要/引言/结果/讨论的动作顺序、断言升级与章节审核。
 - references/nature-perspective-production-zh.md：Nature Perspective/理论文章生产：格式、六节结构、整段规则、证据层级、概念图、双语流程、编辑模式、三学科审读。
-- references/mirror-world-case-study-zh.md：案例复盘：镜像世界假说 Perspective 的六节结构、Box/图、数学对象、生产经验与检查清单。
 - references/figure-craft-and-information-density-zh.md：多面板证据架构、推断角色、图序升级、信息密度、矢量示意图、图形摘要。
 - references/figure-production-zh.md：图件合同、原型、Python/R 后端、设计系统、图型选择、QA。图件任务必读。
 - references/figure-standards-nature-science-zh.md：期刊图件规格、图注语法、统计呈现。
 - references/figure-design-and-audit.md：作者项目的图件几何、颜色层级、结构渲染与发布审核。
-- references/panel-layout-and-letter-placement.md、figure-colour-audit-contract.md、structural-figures-baker-standard.md、figure-r50-regression-checklist.md、seal-supplementary-figure-standard.md：项目图件强制门槛，含逐 panel 交付与 SEAL 28 图发布审核。
+- references/panel-layout-and-letter-placement.md、figure-colour-audit-contract.md、structural-figures-baker-standard.md：面板排布、色彩角色与结构图的图件门槛。
 - references/research-and-language.md：课题设计、假设发展、文献综合、概念重写。
 - references/html-and-data-verification.md：整篇 HTML 修订、数据真实性与计算核验。
 - references/academic-prompt-zh.md：可直接复用的中文任务提示词。
-- 专题文件（seal-project.md、translation-validation.md、dimension-annotation.md）仅在任务涉及该项目时读取。
 - assets/templates/：论文提纲、图件合同、图注、回复信、数据声明、术语表、cover letter/投稿包、创新画布、编辑审核、报告与统计检查、图件证据地图、AI 披露记录、文献检索计划、数据/代码/材料检查表、Perspective 提纲（perspective-manuscript-outline.md）、编辑范围与修改记录（editing-scope-and-change-log.md）、概念图设计单（conceptual-figure-brief.md）、AI 图像溯源记录（ai-image-provenance-record.md）、AI 使用负面清单（ai-negative-checklist.md）。
 
 专题数值是有日期的证据记录，不是普适事实；最新作者决定和核实后的分析优先。技能使用不代表授权对外发表或修改源数据。
@@ -184,7 +182,7 @@ Perspective 必须改变读者理解。先写一句内部编辑句，从具体�
 
 ### 4.4 Perspective 生产与理论文章
 
-完整 Perspective 需要生产架构，不能只有洞见。用 nature-perspective-production-zh.md 处理 Nature 格式、六节原型（张力、定义、概念动作、方法、回程、视野）、证据层级、整段规则、概念图设计、双语流程、编辑模式和三学科审读。正文用连贯段落，论证内不放列表。目标期刊允许时，每个小节加粗两到三句单句洞见。边界集中一段，不分散到每段。mirror-world-case-study-zh.md 给出一个六节 Perspective 的完整案例，含 Box、三幅概念图、数学对象和生产经验。
+完整 Perspective 需要生产架构，不能只有洞见。用 nature-perspective-production-zh.md 处理 Nature 格式、六节原型（张力、定义、概念动作、方法、回程、视野）、证据层级、整段规则、概念图设计、双语流程、编辑模式和三学科审读。正文用连贯段落，论证内不放列表。目标期刊允许时，每个小节加粗两到三句单句洞见。边界集中一段，不分散到每段。
 
 详见 main-text-and-information-architecture-zh.md。
 
@@ -266,7 +264,7 @@ Nature 正刊的方法统计段须覆盖检验、单双侧、独立单位、重�
 
 任何图件任务先读 figure-production-zh.md、figure-craft-and-information-density-zh.md 和 figure-standards-nature-science-zh.md；项目图件同时读 figure-design-and-audit.md 及其配套契约。
 
-**图级断言与证据架构。** 从一个结果层问题、一个图级断言开始，并写出什么能推翻它。让面板承担不同推断角色（体系、代表性实例、主要定量证据、基线/对照、分解、分层、正交验证、扰动/压力测试、边界/失败案例、机制证据）。角色多样性优先于指标多样性；同一指标换种子/阈值的镜像布局只是一个角色，不是四个。使用链条：建立 → 比较/对照 → 压力测试/区分 → 扩展 → 限定。跨图时，每幅图应制造下一个问题，而不是重复"X 表现好"。
+**图级断言与证据架构。** 从一个结果层问题、一个图级断言开始，并写出什么能推翻它。让面板承担不同推断角色（体系、代表性实例、主要定量证据、基线/对照、分解、分层、正交验证、扰动/压力测试、边界/失败案例、机制证据）。角色多样性优先于指标多样性；同一指标换种子/阈值的重复布局只是一个角色，不是四个。使用链条：建立 → 比较/对照 → 压力测试/区分 → 扩展 → 限定。跨图时，每幅图应制造下一个问题，而不是重复"X 表现好"。
 
 **10.1 图件合同。** 写图前确定：一句话结论、图件原型、面板地图（每面板一个问题）、证据层级、统计、源数据映射、审稿风险。每个面板回答独立问题；hero 面板获得最清晰坐标轴和最大面积；对照面板视觉更安静。
 
@@ -294,7 +292,7 @@ Nature 正刊的方法统计段须覆盖检验、单双侧、独立单位、重�
 
 **10.7 Perspective 与理论文章的概念图。** 一幅图一个整合构图，不做互不相关的小图拼贴。纯白背景、平面矢量感、无渐变/阴影/3D、有限色盲友好配色、至少 75% 图示面积、少于约 45 词、面板字母小写，必要时加"概念示意，无实测结果"脚注。画图或生成图前先写图级断言、面板角色、精确文字清单和科学限制；逐项核对标签、公式、箭头和声明。详见 nature-perspective-production-zh.md；设计单见 assets/templates/conceptual-figure-brief.md。
 
-**10.6 逐 panel 交付与补充图。** SEAL 任务在创建或审核任何主图/补充图前完整阅读 seal-supplementary-figure-standard.md。panel 是交付单位：每个已声明 panel 导出为独立可编辑 SVG，自带面板字母、坐标轴、刻度、标记和注释；拼图必须能由这些 panel 导出复现。交付合成 SVG、矢量 PDF、600 dpi PNG 与 JPG、每 panel 一份 SVG、共享图例/比例尺 SVG、图注、panel 定义记录与审核记录。自动遮挡计数只是筛查：必须在最终尺寸下逐图逐 panel 目检并记录。标签放在边距标签栈中，锚点接近时用引导线；行间距必须大于上一行 x 刻度标签高度加下一行标题带。SEAL 28 图发布门槛要求一次完整重生成：正文 8 pt、轴标签与面板字母 10 pt、轴线/刻度 0.4 pt、数据框 0.9–1.1、零遮挡、600 dpi PNG、可解析 SVG、单页 PDF、panel SVG 链接有效，并检查桌面与移动端浏览器渲染。
+**10.6 逐 panel 交付（可选）。** 目标项目或期刊要求可编辑分面板时，panel 即交付单位：每个已声明 panel 导出为独立可编辑 SVG，自带面板字母、坐标轴、刻度、标记和注释；拼图必须能由这些 panel 导出复现。交付合成 SVG、矢量 PDF、600 dpi PNG 与 JPG、每 panel 一份 SVG、共享图例/比例尺 SVG、图注、panel 定义记录与审核记录。自动遮挡计数只是筛查：必须在最终尺寸下逐图逐 panel 目检并记录。标签放在边距标签栈中，锚点接近时用引导线；行间距必须大于上一行 x 刻度标签高度加下一行标题带。
 
 ## 十一、修订、润色、格式与审稿回复
 
@@ -330,7 +328,7 @@ Nature 正刊的方法统计段须覆盖检验、单双侧、独立单位、重�
 - 前沿与新颖性断言有检索日期和可追溯原始文献。
 - 影响结论的数值与源数据、计算、表格、图件和单位一致。
 - 审稿回复覆盖每条编辑/审稿意见，给出动作、位置和剩余局限。
-- 每个已声明 panel 都有独立 SVG 交付；合成图、PDF、600 dpi PNG/JPG、图注与审核记录一致；SEAL 补充图通过 28 图发布门槛。
+- 每个已声明 panel 在项目要求时都有独立 SVG 交付；合成图、PDF、600 dpi PNG/JPG、图注与审核记录一致。
 - 文件真实存在、版本为已审核版本，未解决问题已报告。
 - 创新性已分类并定位；缺口是科学未知；竞争解释有区分性预测；为什么是这个/现在/广泛能不用形容词回答。
 - 编辑标准、广泛兴趣与期刊契合度各用一句话评估；cover letter 与意义声明与稿件实际断言一致。

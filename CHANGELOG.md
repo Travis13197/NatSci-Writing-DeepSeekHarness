@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.1 — 2026-11-24
+
+Project-agnostic content and a publishable repository.
+
+- Removed the project-specific documents from both language sets (worked case study,
+  project conventions, project figure gates, dimension annotation, translation log),
+  and rewrote the prose in the parent guides, `figure-production`, the Perspective
+  production rule, the figure-contract template and the figure brief so nothing names
+  a particular project. Rule counts are now 26 English and 27 Chinese.
+- Repository metadata points at `NatSci-Writing-DeepSeekHarness`; npm keywords expanded
+  to the discovery vocabulary; `engines.dsh` unchanged.
+- README is English-first with a short Chinese overview; `README.zh.md` is the full
+  Chinese version. Both list the recommended GitHub topics for exposure.
+- `distribution/index.json` regenerated for 1.1.1.
+
 ## 1.1.0 — 2026-11-24
 
 Library updated to NatSci-Writing-skills **1.2.6.2**, English and Chinese.

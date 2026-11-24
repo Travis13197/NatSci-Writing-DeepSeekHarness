@@ -82,7 +82,7 @@
 - 线条图用 SVG/PDF 且文字可编辑；位图 300–600 dpi；RGB；嵌入字体；保持纵横比。
 - 在 100% 印刷尺寸、灰度和色盲模拟下检查；对所有 artist 类型（散点、线集合、区间、柱、身份线）检查文字—文字、文字—画布、文字—数据遮挡，不只检查点。
 - 位图面板检查外边界内容范围和内部空白带；只裁剪完全空白的外边距；保持分子纵横比；结构面板内容范围不低于 85%。
-- 记录发布文件：面板几何、间距、逐轴字号、颜色角色、遮挡结果、源数据映射、导出检查。项目审计文件与阈值见 figure-design-and-audit.md、panel-layout-and-letter-placement.md、figure-colour-audit-contract.md、figure-r50-regression-checklist.md。
+- 记录发布文件：面板几何、间距、逐轴字号、颜色角色、遮挡结果、源数据映射、导出检查。项目审计文件与阈值见 figure-design-and-audit.md、panel-layout-and-letter-placement.md、figure-colour-audit-contract.md。
 - 保存后不得压缩设计间距；保存的成图必须是审核过的版式。旧的 PASS 不能证明新的渲染；每次重新测量当前文件。
 
 ### 7A. 最终 HTML 有效字号与固定 canvas
@@ -105,9 +105,9 @@ Matplotlib 的 10 pt 是源 raster 的点值，不是页面显示值。浏览器
 - 多个结果分支时，建立分支索引（估计量、分母、阈值、失败条件）。
 - 源数据不能公开时，说明可公开什么（汇总统计、元数据、合成数据）及原因；不暗示不存在的可用性。
 
-## 八B、SEAL 与逐 panel 交付
+## 八B、逐 panel 交付（可选）
 
-SEAL 图件必须完整阅读 seal-supplementary-figure-standard.md。每个已声明 panel 是独立可编辑 SVG，自带面板字母、轴标签、刻度、标记与注释；拼图必须可由 panel 导出复现。交付合成 SVG、矢量 PDF、600 dpi PNG/JPG、每 panel 一份 SVG、共享图例/比例尺 SVG、图注、panel 定义记录与审核记录。自动遮挡检查只是筛查；必须在最终尺寸下逐图逐 panel 目检并记录缺陷与修复。标签栈与引导线、行列带宽以及 8/10/10/0.4 pt 发布门槛见该规范。
+目标项目要求可编辑分面板时，每个已声明 panel 是独立可编辑 SVG，自带面板字母、轴标签、刻度、标记与注释；拼图必须可由 panel 导出复现。交付合成 SVG、矢量 PDF、600 dpi PNG/JPG、每 panel 一份 SVG、共享图例/比例尺 SVG、图注、panel 定义记录与审核记录。自动遮挡检查只是筛查；必须在最终尺寸下逐图逐 panel 目检并记录缺陷与修复。标签栈与引导线、行列带宽见 panel-layout-and-letter-placement.md。
 
 ## 九、最小模板
 

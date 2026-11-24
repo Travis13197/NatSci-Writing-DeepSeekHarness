@@ -31,5 +31,5 @@
 
 库版本：NatSci-Writing-skills 1.2.6.2（中英双语）。中文润色读中文套（`lang: "zh"`），英文润色读英文套。
 
-- 规则：references/revision-and-response.md（§1 推理修复、§5 风格护栏、§8 期刊格式检查）、proofreading-and-polish.md（五遍校对）、language-and-taste.md（节奏与 house style）、writing-diagnostics.md、translation-validation.md（中英对照）、html-and-data-verification.md（HTML 修订与数据核验）、ai-use-and-writing-integrity.md（AI 使用披露与 AI 腔控制）、manuscript-production.md（投稿包与声明）。
+- 规则：references/revision-and-response.md（§1 推理修复、§5 风格护栏、§8 期刊格式检查）、proofreading-and-polish.md（五遍校对）、language-and-taste.md（节奏与 house style）、writing-diagnostics.md、html-and-data-verification.md（HTML 修订与数据核验）、ai-use-and-writing-integrity.md（AI 使用披露与 AI 腔控制）、manuscript-production.md（投稿包与声明）。
 - 模板：templates/terminology-and-decisions.md、editing-scope-and-change-log.md、ai-disclosure.md、ai-negative-checklist.md。

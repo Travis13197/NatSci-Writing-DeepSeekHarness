@@ -9,7 +9,7 @@
 - 统计口径：n 的定义、中心量、离散度、检验方法、是否双侧、多重比较校正。
 - 目标期刊：Nature 或 Science（尺寸、字号、panel 字母规范不同）。
 - 后端选择：Python 或 R，整套图只用一个后端。
-- 项目图件门槛（若是 SEAL 或作者项目）：references/seal-supplementary-figure-standard.md、references/structural-figures-baker-standard.md。
+- 项目图件门槛：references/structural-figures-baker-standard.md；若目标项目另有图件规范，以该项目规范为准。
 
 ## 流程（依据 references/figure-production.md 与 references/figure-standards-nature-science.md）
 
@@ -45,6 +45,6 @@
 
 库版本：NatSci-Writing-skills 1.2.6.2（中英双语）。图件规则两种语言都有，中文稿优先读 `lang: "zh"`。
 
-- 规则：references/figure-production.md、figure-standards-nature-science.md、figure-design-and-audit.md、figure-craft-and-information-density.md（多 panel 证据架构与信息密度）、panel-layout-and-letter-placement.md、figure-colour-audit-contract.md、structural-figures-baker-standard.md、seal-supplementary-figure-standard.md、statistics-and-reporting-integrity.md（图件统计与图像诚信）、ai-figures-and-visual-integrity.md（AI 图件政策与来源）。
+- 规则：references/figure-production.md、figure-standards-nature-science.md、figure-design-and-audit.md、figure-craft-and-information-density.md（多 panel 证据架构与信息密度）、panel-layout-and-letter-placement.md、figure-colour-audit-contract.md、structural-figures-baker-standard.md、statistics-and-reporting-integrity.md（图件统计与图像诚信）、ai-figures-and-visual-integrity.md（AI 图件政策与来源）。
 - 模板：templates/figure-contract.md、figure-caption.md、figure-evidence-map.md（panel—论断—数据映射）、conceptual-figure-brief.md（概念图）。
 - 起手代码：code/figure_python.py、code/figure_r.R（`--demo --out` 可先出骨架）。

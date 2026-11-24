@@ -7,7 +7,7 @@ description: >-
   methods, reviews, perspectives, figure sets, figure legends, journal formatting,
   response-to-reviewers letters, Chinese scientific prose, complete HTML revision,
   literature-grounded research design, data or calculation verification, bracketed
-  annotations, bilingual revision and continuation of the SEAL project. Encodes
+  annotations and bilingual revision. Encodes
   corpus-calibrated argument architecture, diction, hedging, figure conventions,
   editorial fit, statistics and reporting integrity, information architecture and
   end-to-end production workflows measured from 800+ Nature/Science papers.
@@ -50,16 +50,14 @@ Resources:
 - references/perspective-and-insight.md — Perspective intellectual centre, sequence of discoveries, speculation and accountability, formal content, audit.
 - references/nature-section-craft.md — Nature abstract/Introduction/Results/Discussion move sequences, claim escalation and section audits.
 - references/nature-perspective-production.md — Nature Perspective/theory-paper production: format, six-section architecture, full-paragraph rule, evidence hierarchy, conceptual figures, bilingual workflow, editing modes, three-discipline review.
-- references/mirror-world-case-study.md — worked case: mirror-world hypothesis Perspective, six sections, Box/figures, mathematical objects, production lessons and reusable checklist.
 - references/figure-craft-and-information-density.md — multi-panel evidence architecture, inferential roles, figure order escalation, information density, vector schematics, graphical abstracts.
 - references/figure-production.md — figure contract, archetypes, Python/R backends, design system, chart selection, QA. Read for any figure task.
 - references/figure-standards-nature-science.md — journal specifications, caption grammar, statistical display.
 - references/figure-design-and-audit.md — the author's project geometry, colour hierarchy, structure rendering and release audits.
-- references/panel-layout-and-letter-placement.md, figure-colour-audit-contract.md, structural-figures-baker-standard.md, seal-supplementary-figure-standard.md — mandatory project figure gates, including per-panel delivery and the SEAL 28-figure release audit.
+- references/panel-layout-and-letter-placement.md, figure-colour-audit-contract.md, structural-figures-baker-standard.md — figure gates for panel layout, colour roles and structural rendering.
 - references/research-and-language.md — research-topic design, hypothesis development, literature synthesis, conceptual revision.
 - references/html-and-data-verification.md — complete HTML revision, data authenticity and calculation checks.
 - references/academic-prompt-zh.md — reusable Chinese task prompt.
-- Project references (seal-project.md, translation-validation.md, dimension-annotation.md) — only for that project.
 - assets/templates/ — manuscript outline, figure contract, caption, response letter, data statements, terminology ledger, cover letter/submission package, innovation canvas, editorial audit, reporting/statistics checklist, figure evidence map, AI-disclosure record, literature-search plan, data/code/materials checklist, Perspective outline (perspective-manuscript-outline.md), editing-scope/change log (editing-scope-and-change-log.md), conceptual-figure brief (conceptual-figure-brief.md), AI-image provenance record (ai-image-provenance-record.md), AI-use negative checklist (ai-negative-checklist.md).
 
 Project-specific values are dated evidence records, not universal facts; the latest author decision and verified analyses supersede them. Skill use does not authorize external publication or source-data changes.
@@ -183,7 +181,7 @@ A Perspective must change how the reader thinks. State one private editorial sen
 
 ### 4.4 Perspective production and theory manuscripts
 
-A full Perspective needs a production architecture, not only an insight. Use nature-perspective-production.md for the Nature format, the six-section archetype (tension, definitions, conceptual move, method, return, horizon), the evidence hierarchy, the full-paragraph rule, conceptual figure design, bilingual workflow, editing modes and the three-discipline review. Manuscript prose uses connected paragraphs; bullet lists stay out of the argument. Bold two or three single-sentence insights per subsection where the journal permits. Put boundaries in one dedicated paragraph, not in every paragraph. The mirror-world case study in mirror-world-case-study.md shows a worked six-section Perspective with a Box, three conceptual figures, mathematical objects and production lessons.
+A full Perspective needs a production architecture, not only an insight. Use nature-perspective-production.md for the Nature format, the six-section archetype (tension, definitions, conceptual move, method, return, horizon), the evidence hierarchy, the full-paragraph rule, conceptual figure design, bilingual workflow, editing modes and the three-discipline review. Manuscript prose uses connected paragraphs; bullet lists stay out of the argument. Bold two or three single-sentence insights per subsection where the journal permits. Put boundaries in one dedicated paragraph, not in every paragraph.
 
 ### 4.1 Main-text discipline and information architecture
 
@@ -271,7 +269,7 @@ Read figure-production.md, figure-craft-and-information-density.md and figure-st
 
 **9.0 AI figure gate.** Classify every figure before choosing a tool: data figure, conceptual schematic, graphical abstract/cover, AI-assisted layout or AI-assisted processing. Data figures use real data and code; a generative image model must not create or alter them. Conceptual AI-assisted figures need journal permission, disclosure in Methods/legend/cover letter, human verification of every label and relationship, a conceptual label, and a provenance record (tool/version/date/prompt/output hash/manual edits). Covers and graphical abstracts need editor permission. Check the journal policy before generation; policies differ and change. Full policy and negative list: ai-figures-and-visual-integrity.md.
 
-**Figure-level claim and evidence architecture.** Start from one Results-level question and one figure-level claim; state what could overturn it. Give panels distinct inferential roles (setup, representative example, primary quantitative evidence, baseline/control, decomposition, stratification, orthogonal validation, perturbation/stress test, boundary/failure case, mechanistic evidence). Prefer role diversity over metric diversity; a mirror layout of the same metric is one role, not four. Use a chain: establish → compare/control → stress-test/discriminate → broaden → bound. Across figures, each figure should raise the next question rather than repeat “X performs well”.
+**Figure-level claim and evidence architecture.** Start from one Results-level question and one figure-level claim; state what could overturn it. Give panels distinct inferential roles (setup, representative example, primary quantitative evidence, baseline/control, decomposition, stratification, orthogonal validation, perturbation/stress test, boundary/failure case, mechanistic evidence). Prefer role diversity over metric diversity; the same metric re-plotted with a new seed or threshold is one role, not four. Use a chain: establish → compare/control → stress-test/discriminate → broaden → bound. Across figures, each figure should raise the next question rather than repeat “X performs well”.
 
 **9.1 Contract.** Write the figure's one-sentence conclusion, archetype, panel map (each panel one question), evidence hierarchy, statistics, source-data mapping and reviewer risks before coding. Every panel answers a unique question; the hero panel gets the clearest axis and largest area; controls stay quieter.
 
@@ -297,7 +295,7 @@ Read figure-production.md, figure-craft-and-information-density.md and figure-st
 
 **9.7 Conceptual figures for Perspectives and theory papers.** Design one integrated composition per figure, not a collage of unrelated panels. Use a pure white background, flat vector-like artwork, no gradients/shadows/3D, a limited colour-blind-aware palette, at least 75% diagram area, fewer than about 45 words, lowercase panel letters and a "conceptual; no measured results" footer where appropriate. State the figure-level claim, panel roles, exact text inventory and scientific constraints before generating or drawing; check every label, equation, arrow and disclaimer. Detail: nature-perspective-production.md; brief template: assets/templates/conceptual-figure-brief.md.
 
-**9.6 Per-panel deliverables and supplementary figures.** For SEAL work, read seal-supplementary-figure-standard.md in full before creating or auditing any main or supplementary figure. The panel is the delivery unit: every declared panel is exported as its own editable SVG carrying its own letter, axes, ticks, marks and annotations; the composite must be reproducible from those panel exports. Deliver composite SVG, vector PDF, 600-dpi PNG and JPG, one SVG per panel, one SVG per shared legend or scale bar, the caption, a panel-definition record and an audit record. Automated collision counts are screening only: open every figure at final size and inspect panel by panel, and record the inspection. Labels sit in a margin label stack with leader lines when anchors are close; the row gap must exceed the previous row's x tick labels plus the next row's title band. The SEAL 28-figure release gate requires one regeneration pass with 8 pt ordinary text, 10 pt axis labels and panel letters, 0.4 pt axis/tick strokes, 0.9–1.1 data boxes, zero collisions, 600-dpi PNG, parseable SVG, one-page PDF, current panel SVG links and browser checks at desktop and mobile widths.
+**9.6 Per-panel deliverables (optional).** When the target project or journal expects editable panels, the panel is the delivery unit: every declared panel is exported as its own editable SVG carrying its own letter, axes, ticks, marks and annotations; the composite must be reproducible from those panel exports. Deliver composite SVG, vector PDF, 600-dpi PNG and JPG, one SVG per panel, one SVG per shared legend or scale bar, the caption, a panel-definition record and an audit record. Automated collision counts are screening only: open every figure at final size and inspect panel by panel, then record the inspection. Labels sit in a margin label stack with leader lines when anchors are close, and the row gap must exceed the previous row's x tick labels plus the next row's title band.
 
 ## 10. Revision, polishing, formatting and response
 
@@ -333,7 +331,7 @@ Read figure-production.md, figure-craft-and-information-density.md and figure-st
 - Frontier and novelty claims have a dated search record and verified primary sources.
 - Consequential numerical claims agree with source data, calculations, tables, figures and units.
 - Response package covers every editor/reviewer item with action, location and remaining limitation.
-- Per-panel SVG deliverables exist for every declared panel; composite, PDF, 600-dpi PNG/JPG, caption and audit record agree; SEAL supplementary figures pass the 28-figure release gate.
+- Per-panel SVG deliverables exist for every declared panel when the project requires them; composite, PDF, 600-dpi PNG/JPG, caption and audit record agree.
 - Innovation is classified and positioned; the gap is a scientific unknown; competing explanations have discriminating predictions; why-this/why-now/why-broad are answerable without adjectives.
 - Editorial criteria, broad interest and journal fit are assessed in one sentence each; the cover letter and significance statement match the manuscript's actual claims.
 - Every result has an assigned destination; the shortest sufficient evidence chain is in the main text; SI does not hide conclusion-changing results; revision additions pass the deletion check.

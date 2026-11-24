@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NatSci writing studio",
-    "description": "Adds a writing studio to the sidebar for scientific manuscripts, academic reports, submission figure sets, reviewer responses and journal formatting. The studio opens five deliverable cards that write an editable starter prompt into a new Session, a Nature/Science figure-specification quick reference, the template and starter-code library, and a clickable index of all 64 reference rules (31 English, 33 Chinese). It also registers the `natsci_studio` tool, which any Session can call to read the bundled NatSci-Writing-skills 1.2.6.2 rules, 19 templates and figure starter code in English or Chinese (Apache-2.0). Open it from the Studio icon in the sidebar. The plugin reads only files shipped inside itself: no network access, no workspace writes. Disable it to remove both the entry and the tool.",
+    "description": "Adds a writing studio to the sidebar for scientific manuscripts, academic reports, submission figure sets, reviewer responses and journal formatting. The studio opens five deliverable cards that write an editable starter prompt into a new Session, a Nature/Science figure-specification quick reference, the template and starter-code library, and a clickable index of all 53 reference rules (26 English, 27 Chinese). It also registers the `natsci_studio` tool, which any Session can call to read the bundled NatSci-Writing-skills 1.2.6.2 rules, 19 templates and figure starter code in English or Chinese (Apache-2.0). Open it from the Studio icon in the sidebar. The plugin reads only files shipped inside itself: no network access, no workspace writes. Disable it to remove both the entry and the tool.",
     "detail": "docs/DETAIL.md"
   }
 }

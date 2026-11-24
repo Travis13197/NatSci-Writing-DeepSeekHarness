@@ -52,5 +52,5 @@ Write this before plotting. One contract per figure.
 - [ ] Colour-blind and greyscale checks; semantic colour roles stable
 - [ ] Text-text, text-canvas, text-mark collisions checked for all artist types
 - [ ] Caption states n, error definition, test and correction
-- [ ] Composite reproducible from per-panel exports (SEAL/project)
+- [ ] Composite reproducible from per-panel exports (when the project requires it)
 - [ ] Source data and plotting script archived

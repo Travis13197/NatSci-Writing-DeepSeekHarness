@@ -83,7 +83,7 @@ If the user has not chosen a backend explicitly or through a language-specific f
 - SVG/PDF for line art with editable text; TIFF/PNG at 300–600 dpi for raster; RGB; embed fonts; preserve aspect ratio.
 - Verify at 100% print size, in greyscale and in colour-blind simulation; check text-text, text-canvas and text-mark collisions for every artist type (scatter, line collections, intervals, bars, identity lines), not only points.
 - Check outer content extent and internal blank bands for raster panels; crop only fully blank outer margins; keep molecular aspect ratio; structure panels retain ≥85% content extent.
-- Record release files: panel geometry, gutter widths, typography per axes, colour roles, collision results, source-data mapping, export checks. The project audit files and thresholds are specified in figure-design-and-audit.md, panel-layout-and-letter-placement.md and figure-colour-audit-contract.md; the Chinese package additionally carries figure-r50-regression-checklist.md.
+- Record release files: panel geometry, gutter widths, typography per axes, colour roles, collision results, source-data mapping, export checks. The project audit files and thresholds are specified in figure-design-and-audit.md, panel-layout-and-letter-placement.md and figure-colour-audit-contract.md; 
 - Never compact designed gutters after rendering; the saved artifact must be the audited layout. A previous PASS does not certify a new render; re-measure the current file.
 
 ## 8. Integration with the manuscript
@@ -93,9 +93,9 @@ If the user has not chosen a backend explicitly or through a language-specific f
 - For multiple result branches, keep a branch-by-branch index of estimand, denominator, threshold and failure condition.
 - If the source data cannot be released, say what can be released (summary statistics, metadata, synthetic data) and why; do not imply availability that does not exist.
 
-## 8b. SEAL and per-panel deliverables
+## 8b. Per-panel deliverables (optional)
 
-For SEAL figures, read seal-supplementary-figure-standard.md in full. Every declared panel is its own editable SVG with its own panel letter, axis labels, ticks, marks and annotations; the composite must be reproducible from panel exports. Deliver composite SVG, vector PDF, 600-dpi PNG/JPG, one SVG per panel, one SVG per shared legend or scale bar, the caption, a panel-definition record and an audit record. Automated collision checks are screening only; inspect every figure at final size panel by panel and record defects and fixes. Label stacks with leader lines, row/column bands and the 8/10/10/0.4 pt release gate are defined in that reference.
+When the target project expects editable panels, every declared panel is its own editable SVG with its own panel letter, axis labels, ticks, marks and annotations; the composite must be reproducible from panel exports. Deliver composite SVG, vector PDF, 600-dpi PNG/JPG, one SVG per panel, one SVG per shared legend or scale bar, the caption, a panel-definition record and an audit record. Automated collision checks are screening only; inspect every figure at final size panel by panel and record defects and fixes. Label stacks with leader lines and row/column bands are defined in panel-layout-and-letter-placement.md.
 
 ## 9. Minimal working templates
 

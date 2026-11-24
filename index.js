@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url'
 const packageDir = fileURLToPath(new URL('.', import.meta.url))
 const libraryDir = join(packageDir, 'library')
 
-/** Library version this bundle ships, mirrored from the bundled SKILL.md. */
+/** Library version this bundle ships, kept in sync with the bundled SKILL.md. */
 const LIBRARY_VERSION = '1.2.6.2'
 
 /** Deliverable modes the studio recognises, in workflow order. */
@@ -29,7 +29,7 @@ const MODES = [
 ]
 
 /**
- * Readable folders per language set, mirroring the upstream skill layout so the
+ * Readable folders per language set, matching the upstream skill layout so the
  * paths a guide cites (`references/…`, `assets/templates/…`) resolve on disk.
  */
 const KINDS = {
@@ -88,7 +88,6 @@ const REFERENCE_NOTES = {
   'perspective-and-insight.md': 'Perspective 的思想内核、发现序列、推测与责任、形式要素。',
   'nature-section-craft.md': 'Nature 摘要/引言/结果/讨论的 move 序列、论断升级、章节审核。',
   'nature-perspective-production.md': 'Nature Perspective/理论文生产：六段结构、整段规则、概念图、双语流程。',
-  'mirror-world-case-study.md': '案例：镜像世界假说 Perspective 的全流程与可复用清单。',
   'figure-craft-and-information-density.md': '多 panel 证据架构、推理角色、图序升级、信息密度、graphical abstract。',
   'figure-production.md': '图件合同、archetype、Python/R 后端、设计系统、图表选择、QA。',
   'figure-standards-nature-science.md': 'Nature/Science 期刊规格、图注语法、统计呈现。',
@@ -96,13 +95,9 @@ const REFERENCE_NOTES = {
   'panel-layout-and-letter-placement.md': 'panel 排布与字母位置。',
   'figure-colour-audit-contract.md': '图件配色审核契约。',
   'structural-figures-baker-standard.md': '结构图标准（Baker 体系）。',
-  'seal-supplementary-figure-standard.md': 'SEAL 补充图标准与 28 图发布审核。',
   'research-and-language.md': '课题设计、假设发展、文献综合、概念修订。',
   'html-and-data-verification.md': '完整 HTML 修订、数据真实性与计算核验。',
   'academic-prompt-zh.md': '可复用的中文任务提示词。',
-  'seal-project.md': 'SEAL 项目专用约定。',
-  'translation-validation.md': '中英对照与译文校验。',
-  'dimension-annotation.md': '维度标注约定。',
 }
 
 /**

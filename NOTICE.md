@@ -4,7 +4,7 @@ NatSci-Writing-skills is an author-maintained production system assembled from t
 
 ## 1. Author project standards
 
-The Nature/Science manuscript and figure standards, project figure geometry and colour contracts, structural-figure (Baker) standard, SEAL supplementary-figure standard and R50 regression checklist remain the author's project material.
+The Nature/Science manuscript and figure standards, project figure geometry and colour contracts, structural-figure (Baker) standard remain the author's project material.
 
 ## 2. NatSci corpus analysis
 

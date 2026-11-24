@@ -81,7 +81,7 @@ Mathematics earns its place by unlocking a deduction, not by displaying sophisti
 - connect the object to a measurable biological quantity;
 - state what would make the relation fail.
 
-Useful objects in the mirror-world project illustrate the standard: response laws, operational state equivalence, collision bounds, mean-pooling decomposition, cross-model invariants, Fisher information and rank constraints, Markov closure, and an AdK-inspired equilibrium example. Each was written with its assumptions and its experimental meaning. Keep long derivations in a Methods/Supplementary note and retain only the relation that changes the argument in the main text.
+Useful methodological objects in a theory-heavy Perspective — a response law, an equivalence between operational states, a bound, a decomposition, an invariant, an information measure, a closure condition — should each be written with its assumptions and its experimental meaning. Keep long derivations in a Methods/Supplementary note and retain only the relation that changes the argument in the main text.
 
 ## 7. Figures and box
 

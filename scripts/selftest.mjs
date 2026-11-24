@@ -117,7 +117,7 @@ check('English library 1.2.6.2', /version: "1\.2\.6\.2"/.test(inventory.en.guide
 check('Chinese library 1.2.6.2', /version: "1\.2\.6\.2"/.test(inventory.zh.guide))
 for (const lang of LANGS) {
   const set = inventory[lang]
-  check(`${lang} references present`, set.references.length >= 30, String(set.references.length))
+  check(`${lang} references present`, set.references.length >= 20, String(set.references.length))
   check(`${lang} templates present`, set.templates.length >= 19, String(set.templates.length))
   check(`${lang} starter scripts`, set.codes.length === 2, set.codes.join(','))
 }

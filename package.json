@@ -1,27 +1,41 @@
 {
   "name": "dsh-natsci-writing",
-  "version": "1.1.0",
-  "description": "NatSci writing studio: a sidebar workbench and a bilingual library (NatSci-Writing-skills 1.2.6.2) for manuscripts, academic reports, figure sets, reviewer responses and journal formatting.",
+  "version": "1.1.1",
+  "description": "NatSci writing studio: a sidebar workbench and a bilingual (English/Chinese) scientific-writing library for manuscripts, academic reports, figure sets, reviewer responses and journal formatting.",
   "keywords": [
     "deepseek",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
+    "dsh-bundle",
+    "plugin",
+    "ai-agent",
+    "llm",
+    "agent-tools",
     "scientific-writing",
     "academic-writing",
     "manuscript",
-    "figure",
+    "paper",
+    "research",
+    "figures",
+    "figure-craft",
     "nature",
     "science",
-    "skills"
+    "peer-review",
+    "publishing",
+    "journal-submission",
+    "writing-assistant",
+    "prompt-library",
+    "skills",
+    "sidebar"
   ],
-  "homepage": "https://github.com/Travis13197/dsh-natsci-writing#readme",
+  "homepage": "https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Travis13197/dsh-natsci-writing.git"
+    "url": "git+https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness.git"
   },
   "bugs": {
-    "url": "https://github.com/Travis13197/dsh-natsci-writing/issues"
+    "url": "https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness/issues"
   },
   "author": "Travis13197",
   "license": "Apache-2.0",

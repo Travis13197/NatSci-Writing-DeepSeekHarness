@@ -36,7 +36,7 @@ Panel letters mark reading order; they do not assign fixed functions. Panel a ne
 
 Panels should be independently necessary, not independent stories. Covering one must remove a distinct inferential step the others cannot recover. Prefer role diversity over metric diversity.
 
-Weak mirror layout: a: R2 → b: R2 pairwise tests → c: MAPE → d: MAPE pairwise tests. This is often two roles, not four.
+Weak repeated layout: a: R2 → b: R2 pairwise tests → c: MAPE → d: MAPE pairwise tests. This is often two roles, not four.
 
 Stronger chain: a: perturbation design → b: decisive comparison → c: full distribution/residual → d: decomposition or boundary.
 
