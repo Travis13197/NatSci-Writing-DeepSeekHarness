@@ -8,6 +8,7 @@ academic reports, submission-grade figure sets, reviewer responses and journal f
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-%E2%89%A5%200.2.2--rc.5-4B4B4B.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![Read-only](https://img.shields.io/badge/data-read--only-2ea44f.svg)](#safety)
 [![Topic: dsh-plugin](https://img.shields.io/badge/topic-dsh--plugin-8250df.svg)](https://github.com/topics/dsh-plugin)
+[![selftest](https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness/actions/workflows/selftest.yml/badge.svg)](https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness/actions/workflows/selftest.yml)
 
 ## 中文速览
 
