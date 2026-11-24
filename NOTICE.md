@@ -1,5 +1,8 @@
 # Notice and attribution
 
+Author: **Chuanyang Liu** ([@Travis13197](https://github.com/Travis13197)).
+Copyright 2026 Chuanyang Liu. Licensed under the Apache License 2.0 (root `LICENSE`).
+
 NatSci-Writing-skills is an author-maintained production system assembled from three sources.
 
 ## 1. Author project standards

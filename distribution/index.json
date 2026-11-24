@@ -30,7 +30,7 @@
         "zh": "在侧栏提供一个科研写作台：完整论文、投稿级图件、学术报告、审稿回复、润色与期刊格式五类交付，每张起手卡都会把一条可编辑的起始提示词填进新会话；另有 Nature/Science 图件规格速查、19 个模板与 2 份起手代码的库，以及全部 53 条参考规则的可点击索引（英文 26 条、中文 27 条）。插件同时注册 `natsci_studio` 工具，任何会话都能按语言读取随插件打包的 NatSci-Writing-skills 1.2.6.2 规则、模板与图件起手代码（Apache-2.0）。入口是侧栏的「写作台」图标。插件只读取自身打包的文件：不联网、不写工作区。禁用插件即同时移除入口与工具。"
       },
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik5hdFNjaSB3cml0aW5nIHN0dWRpbyI+CiAgPHBhdGggZD0iTTEwIDZIMjAuNUwyNiAxMS41VjMwSDEwWiIgZmlsbD0iI0YzRjZGOCIgc3Ryb2tlPSIjMkM1QTZFIiBzdHJva2Utd2lkdGg9IjEuNyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0yMC41IDZWMTEuNUgyNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkM1QTZFIiBzdHJva2Utd2lkdGg9IjEuMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgb3BhY2l0eT0iMC41NSIvPgogIDxwYXRoIGQ9Ik0xMy41IDE2SDIzIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQzVBNkUiIHN0cm9rZS13aWR0aD0iMS45IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuODUiLz4KICA8cGF0aCBkPSJNMTMuNSAxOS41SDE5LjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJDNUE2RSIgc3Ryb2tlLXdpZHRoPSIxLjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41Ii8+CiAgPHJlY3QgeD0iMTQiIHk9IjI0LjUiIHdpZHRoPSIyLjYiIGhlaWdodD0iMi41IiByeD0iMC43IiBmaWxsPSIjMkM1QTZFIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPHJlY3QgeD0iMTcuNCIgeT0iMjIuNSIgd2lkdGg9IjIuNiIgaGVpZ2h0PSI0LjUiIHJ4PSIwLjciIGZpbGw9IiMyQzVBNkUiIG9wYWNpdHk9IjAuNyIvPgogIDxyZWN0IHg9IjIwLjgiIHk9IjIwLjUiIHdpZHRoPSIyLjYiIGhlaWdodD0iNi41IiByeD0iMC43IiBmaWxsPSIjQzk3QjJFIi8+Cjwvc3ZnPgo=",
-      "author": "Travis13197",
+      "author": "Chuanyang Liu",
       "homepage": "https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness#readme",
       "repository": {
         "url": "https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness"
@@ -40,8 +40,8 @@
       },
       "versions": [
         {
-          "version": "1.1.1",
-          "publishTimestamp": 1795505100,
+          "version": "1.1.2",
+          "publishTimestamp": 1795505698,
           "source": {
             "type": "npm"
           },

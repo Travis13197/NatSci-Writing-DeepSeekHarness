@@ -1,6 +1,6 @@
 {
   "name": "dsh-natsci-writing",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "NatSci writing studio: a sidebar workbench and a bilingual (English/Chinese) scientific-writing library for manuscripts, academic reports, figure sets, reviewer responses and journal formatting.",
   "keywords": [
     "deepseek",
@@ -37,7 +37,7 @@
   "bugs": {
     "url": "https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness/issues"
   },
-  "author": "Travis13197",
+  "author": "Chuanyang Liu",
   "license": "Apache-2.0",
   "type": "module",
   "exports": {
@@ -75,7 +75,9 @@
   },
   "dsh": {
     "manifestVersion": 1,
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,

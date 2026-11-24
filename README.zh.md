@@ -29,19 +29,55 @@ AI 图件诚信、图件合同与图注语法、期刊规格、审稿回复包�
 
 ## 安装
 
-**从 GitHub 安装**（纯 JavaScript，无需构建）：
+> 仓库地址：<https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness>
+> 需要 DeepSeek Harness `>= 0.2.2-rc.5`（在 0.2.2-rc.5 上验证）。无需构建、无需 API Key、运行时不联网。
+
+### 先确认
+
+- 已安装 DeepSeek Harness **桌面端**，或命令行里有 `dsh`。
+- 准备一个 profile。桌面端默认用 `desktop`，命令行一般用 `web`；下面命令里的 `<profile>` 换成你的。
+- 从 GitHub 安装需要 `npx`（Node.js ≥ 20）；从本地文件夹安装则两者都不需要。
+
+### 方式 A — 从 GitHub 安装（推荐，无需构建）
 
 ```sh
 npx @deepseek-ai/dsh plugin --profile <profile> add github:Travis13197/NatSci-Writing-DeepSeekHarness
 ```
 
-**本地面板**：插件页 → 添加插件 → 选择本目录。
+直接读取仓库即可安装：本插件是纯 JavaScript，没有 `prepare`/构建步骤，安装时不会在你的机器上执行额外代码。
 
-**tarball**：`pnpm pack`，再 `dsh plugin --profile <profile> add ./dsh-natsci-writing-1.1.1.tgz`。
+### 方式 B — 在应用内从文件夹安装
 
-**npm**（发布后）：`dsh plugin --profile <profile> add dsh-natsci-writing`。
+1. 下载或克隆 <https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness>。
+2. 打开 DeepSeek Harness 左侧的 **插件** → **添加插件**。
+3. 选择刚下载的文件夹并确认。
+4. 刷新页面。
 
-安装后重启或重载该 profile 并刷新页面，侧栏出现「写作台」。
+### 方式 C — 用 tarball 安装
+
+```sh
+pnpm pack                     # 生成 dsh-natsci-writing-<version>.tgz
+dsh plugin --profile <profile> add ./dsh-natsci-writing-<version>.tgz
+```
+
+### 方式 D — 从 npm 安装（发布之后）
+
+```sh
+dsh plugin --profile <profile> add dsh-natsci-writing
+```
+
+### 安装完成后
+
+1. **重启该 profile**：桌面端退出后重开；命令行停止后重新执行 `dsh web`。
+2. **刷新页面**：左侧栏会出现 **写作台** 图标（位于「插件」与「定时任务」之间）。
+3. **确认可用**：插件页里能看到 *NatSci writing studio* `1.1.2` 已启用；点「写作台」能看到五张起手卡和规则索引；
+   在任意会话里让 Agent 调用 `natsci_studio`，参数 `{ "action": "catalog" }`。
+
+### 更新与卸载
+
+- **更新**：重新执行 `add github:...` 安装新版本，或在 **插件** 页面用该组合包的更新操作。
+- **卸载**：`dsh plugin --profile <profile> remove dsh-natsci-writing`，或在 **插件** 页面卸载。
+  停用该组合包会同时移除侧栏入口与工具。
 
 ## 兼容性与安全
 
@@ -71,4 +107,5 @@ Desktop 自带环境没有 `PATH` 上的 `node`，用应用自身的可执行文
 
 ## 许可证
 
-Apache-2.0。内置规则库由作者的科研写作体系整理而成，采用同一许可证；见 `LICENSE` 与 `NOTICE.md`。
+Apache-2.0。作者：**Chuanyang Liu**（<https://github.com/Travis13197>）。
+内置规则库由作者的科研写作体系整理而成，采用同一许可证；见 `LICENSE` 与 `NOTICE.md`。

@@ -37,19 +37,63 @@ academic reports, submission-grade figure sets, reviewer responses and journal f
 
 ## Install
 
-**From GitHub** (no build step; the bundle is plain JavaScript):
+> Repository: <https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness>
+> Requires DeepSeek Harness `>= 0.2.2-rc.5` (verified on 0.2.2-rc.5). No build step,
+> no API key, no network access at runtime.
+
+### Before you start
+
+- DeepSeek Harness **Desktop**, or the `dsh` CLI on `PATH`.
+- A profile to install into. The Desktop app uses the profile named `desktop`; the
+  CLI usually uses `web`. Replace `<profile>` below with yours.
+- Installing from GitHub needs `npx` (Node.js ≥ 20). Installing from a local folder
+  needs neither.
+
+### Option A — from GitHub (recommended, no build)
 
 ```sh
 npx @deepseek-ai/dsh plugin --profile <profile> add github:Travis13197/NatSci-Writing-DeepSeekHarness
 ```
 
-**From a local directory**: Plugins → Add plugin → select this directory.
+This reads the repository directly — the bundle is plain JavaScript, so there is no
+`prepare`/build step and nothing runs on your machine besides the install.
 
-**From a tarball**: `pnpm pack`, then `dsh plugin --profile <profile> add ./dsh-natsci-writing-1.1.1.tgz`.
+### Option B — from this folder, inside the app
 
-**From npm** (once published): `dsh plugin --profile <profile> add dsh-natsci-writing`.
+1. Download or clone <https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness>.
+2. In DeepSeek Harness open **Plugins** (left sidebar) → **Add plugin**.
+3. Select the downloaded folder and confirm.
+4. Reload the page.
 
-Then restart or reload that profile and refresh the page; the Studio icon appears in the sidebar.
+### Option C — from a tarball
+
+```sh
+pnpm pack                     # produces dsh-natsci-writing-<version>.tgz
+dsh plugin --profile <profile> add ./dsh-natsci-writing-<version>.tgz
+```
+
+### Option D — from npm (after `pnpm publish`)
+
+```sh
+dsh plugin --profile <profile> add dsh-natsci-writing
+```
+
+### After installing
+
+1. **Restart the profile** — quit and reopen Desktop, or stop and restart `dsh web`.
+2. **Reload the page.** A **Studio** (写作台) icon appears in the left sidebar between
+   *Plugins* and *Scheduled tasks*.
+3. **Verify:** open **Plugins**, confirm *NatSci writing studio* `1.1.2` is enabled;
+   click the Studio icon and check that five deliverable cards and the rule index
+   appear; in any chat, ask the agent to call `natsci_studio` with
+   `{ "action": "catalog" }`.
+
+### Update and remove
+
+- **Update:** install the newer version again (`add github:...`), or use the bundle's
+  update action in **Plugins**.
+- **Remove:** `dsh plugin --profile <profile> remove dsh-natsci-writing`, or uninstall
+  it in **Plugins**. Disabling the bundle removes both the sidebar entry and the tool.
 
 ## Library
 
@@ -103,5 +147,6 @@ HTTPS host and others can add that URL under Plugins → Discover → Add index 
 
 ## License
 
-Apache-2.0. The bundled library derives from the author's NatSci-Writing-skills system and is
+Apache-2.0. Author: **Chuanyang Liu** (<https://github.com/Travis13197>).
+The bundled library derives from the author's NatSci-Writing-skills system and is
 distributed under the same license; see `LICENSE` and `NOTICE.md`.

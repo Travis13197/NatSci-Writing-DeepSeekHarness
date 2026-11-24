@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.2 — 2026-11-24
+
+- README gains a step-by-step install guide for both languages: prerequisites, four
+  install routes (GitHub, in-app folder, tarball, npm), post-install verification,
+  update and removal — with the repository URL and the tested DSH version.
+- Author metadata is **Chuanyang Liu**: `package.json` `author`, the NOTICE copyright
+  line, and the LICENSE section of both READMEs.
+- `distribution/index.json` regenerated for 1.1.2.
+
 ## 1.1.1 — 2026-11-24
 
 Project-agnostic content and a publishable repository.
