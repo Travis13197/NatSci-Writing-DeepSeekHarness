@@ -7,13 +7,15 @@ description: >-
   methods, reviews, perspectives, figure sets, figure legends, journal formatting,
   response-to-reviewers letters, Chinese scientific prose, complete HTML revision,
   literature-grounded research design, data or calculation verification, bracketed
-  annotations and bilingual revision. Encodes
+  annotations, bilingual revision and continuation of the SEAL project. Encodes
   corpus-calibrated argument architecture, diction, hedging, figure conventions,
   editorial fit, statistics and reporting integrity, information architecture and
-  end-to-end production workflows measured from 800+ Nature/Science papers.
+  end-to-end production workflows measured from 800+ Nature/Science papers. Includes
+  defensive-writing control (press-release principle, argument selection, experiment duties)
+  and measurable anti-AI-prose gates for English and Chinese drafts.
 metadata:
-  version: "1.2.6.2"
-  updated: "2026-11-24"
+  version: "1.2.7.0"
+  updated: "2026-11-25"
   author: "Chuanyang Liu"
   system: "NatSci-Writing-skills"
   language: "en"
@@ -50,14 +52,16 @@ Resources:
 - references/perspective-and-insight.md — Perspective intellectual centre, sequence of discoveries, speculation and accountability, formal content, audit.
 - references/nature-section-craft.md — Nature abstract/Introduction/Results/Discussion move sequences, claim escalation and section audits.
 - references/nature-perspective-production.md — Nature Perspective/theory-paper production: format, six-section architecture, full-paragraph rule, evidence hierarchy, conceptual figures, bilingual workflow, editing modes, three-discipline review.
+- references/mirror-world-case-study.md — worked case: mirror-world hypothesis Perspective, six sections, Box/figures, mathematical objects, production lessons and reusable checklist.
 - references/figure-craft-and-information-density.md — multi-panel evidence architecture, inferential roles, figure order escalation, information density, vector schematics, graphical abstracts.
 - references/figure-production.md — figure contract, archetypes, Python/R backends, design system, chart selection, QA. Read for any figure task.
 - references/figure-standards-nature-science.md — journal specifications, caption grammar, statistical display.
 - references/figure-design-and-audit.md — the author's project geometry, colour hierarchy, structure rendering and release audits.
-- references/panel-layout-and-letter-placement.md, figure-colour-audit-contract.md, structural-figures-baker-standard.md — figure gates for panel layout, colour roles and structural rendering.
+- references/panel-layout-and-letter-placement.md, figure-colour-audit-contract.md, structural-figures-baker-standard.md, seal-supplementary-figure-standard.md — mandatory project figure gates, including per-panel delivery and the SEAL 28-figure release audit.
 - references/research-and-language.md — research-topic design, hypothesis development, literature synthesis, conceptual revision.
 - references/html-and-data-verification.md — complete HTML revision, data authenticity and calculation checks.
 - references/academic-prompt-zh.md — reusable Chinese task prompt.
+- Project references (seal-project.md, translation-validation.md, dimension-annotation.md) — only for that project.
 - assets/templates/ — manuscript outline, figure contract, caption, response letter, data statements, terminology ledger, cover letter/submission package, innovation canvas, editorial audit, reporting/statistics checklist, figure evidence map, AI-disclosure record, literature-search plan, data/code/materials checklist, Perspective outline (perspective-manuscript-outline.md), editing-scope/change log (editing-scope-and-change-log.md), conceptual-figure brief (conceptual-figure-brief.md), AI-image provenance record (ai-image-provenance-record.md), AI-use negative checklist (ai-negative-checklist.md).
 
 Project-specific values are dated evidence records, not universal facts; the latest author decision and verified analyses supersede them. Skill use does not authorize external publication or source-data changes.
@@ -142,7 +146,7 @@ Avoid opaque phrases (for example 高加性读出中仍可识别连通响应, �
 
 Seven diagnostics (detail in writing-diagnostics.md): abstraction stacking; template contrast; connective inflation; evaluative adjectives; defensive/self-limiting prose; list-paragraphs and module catalogues; meta-commentary. Corpus watchlist density is 2–4 per 1,000 words, mostly statistical/technical; more than ~5 per 1,000 or two in one paragraph signals generated-sounding prose. Run the delete-20%, actor, so-what and read-aloud tests.
 
-**Zero-tolerance patterns.** Do not use template contrast ("not X but Y", "not only X but also Y", "not just X, it is Y", "rather than", "far from"), defensive disclaimers ("it is important to note", "to some extent", "further research is needed", "the findings should be interpreted with caution"), self-limiting framing, outline-like transitions ("In summary", "In conclusion", "Overall"), or their Chinese equivalents (不是……而是……, 并非……而是……, 不仅……而且……, 值得注意的是, 在一定程度上, 有待进一步研究, 综上所述). State claims affirmatively. When two explanations genuinely compete, write two affirmative sentences and let the discriminating evidence separate them. The same ban applies to READMEs, cover letters, figure text and author notes that will be read by others. Check deliverables with python tools/check_prose_style.py; ERROR hits are must-fix. Full pattern tables, rewrites, structural tells and sources: writing-diagnostics.md section 3A.
+**Zero-tolerance patterns.** Do not use template contrast ("not X but Y", "not only X but also Y", "not just X, it is Y", "rather than", "far from"), defensive disclaimers ("it is important to note", "to some extent", "further research is needed", "the findings should be interpreted with caution"), self-limiting framing, outline-like transitions ("In summary", "In conclusion", "Overall"), or their Chinese equivalents (不是……而是……, 并非……而是……, 不仅……而且……, 值得注意的是, 在一定程度上, 有待进一步研究, 综上所述). State claims affirmatively. When two explanations genuinely compete, write two affirmative sentences and let the discriminating evidence separate them. The same ban applies to READMEs, cover letters, figure text and author notes that will be read by others. Check deliverables with python tools/check_prose_style.py; ERROR hits are must-fix. Full pattern tables, rewrites, structural tells and sources: writing-diagnostics.md sections 3A and 4A. For argument-level selection - what the paper claims, which experiments survive, and how to separate a necessary caveat from a defensive one - read defensive-writing-and-argument-selection.md and run the gates in section 17.
 
 ### 3.1 AI assistance boundary
 
@@ -181,7 +185,7 @@ A Perspective must change how the reader thinks. State one private editorial sen
 
 ### 4.4 Perspective production and theory manuscripts
 
-A full Perspective needs a production architecture, not only an insight. Use nature-perspective-production.md for the Nature format, the six-section archetype (tension, definitions, conceptual move, method, return, horizon), the evidence hierarchy, the full-paragraph rule, conceptual figure design, bilingual workflow, editing modes and the three-discipline review. Manuscript prose uses connected paragraphs; bullet lists stay out of the argument. Bold two or three single-sentence insights per subsection where the journal permits. Put boundaries in one dedicated paragraph, not in every paragraph.
+A full Perspective needs a production architecture, not only an insight. Use nature-perspective-production.md for the Nature format, the six-section archetype (tension, definitions, conceptual move, method, return, horizon), the evidence hierarchy, the full-paragraph rule, conceptual figure design, bilingual workflow, editing modes and the three-discipline review. Manuscript prose uses connected paragraphs; bullet lists stay out of the argument. Bold two or three single-sentence insights per subsection where the journal permits. Put boundaries in one dedicated paragraph, not in every paragraph. The mirror-world case study in mirror-world-case-study.md shows a worked six-section Perspective with a Box, three conceptual figures, mathematical objects and production lessons.
 
 ### 4.1 Main-text discipline and information architecture
 
@@ -267,9 +271,28 @@ Verify that files were created and report what remains unresolved. A completed w
 
 Read figure-production.md, figure-craft-and-information-density.md and figure-standards-nature-science.md for any figure task, plus figure-design-and-audit.md and its companion contracts for project figures.
 
+**9.0b Legend, tick and significance gate.** Legends, direct labels and series text must
+not cover data, intervals, matrices or structures. Use one-word labels for short series;
+move more than four series to a horizontal header legend or a reserved right column. Keep
+direct labels as an axes-fraction stack and remeasure after final panel scaling. Resolve
+crowded ticks without deleting x or y axis titles; preserve at least two interpretable
+ticks per axis and select categorical labels evenly from rendered bounding boxes. Derive
+panel letter and title height from the actual top tick. Linear extrema must not touch the
+frame; non-negative proportions keep zero and add upper headroom. Significance brackets
+come only from a real same-group, same-unit, same-denominator, same-direction comparison,
+with forest q values outside the plotting area. Require `zero_text_collisions`,
+`zero_legend_data_occlusion`, `axis_tick_completeness` and `typography_compliant`.
+
+**9.0c Star and horizontal-legend gate.** Use `****/***/**/*/n.s.` inside figures and
+keep exact q values in caption and source table. Continuous effect curves show the matching
+CI band; one continuous significant run labels representative first, middle and last points,
+with state changes and the last point retained. The default legend is a horizontal
+multi-column band below the title; direct endpoint labels are second choice and a right
+column is last. Header legend, panel title and letter bboxes must remain separate.
+
 **9.0 AI figure gate.** Classify every figure before choosing a tool: data figure, conceptual schematic, graphical abstract/cover, AI-assisted layout or AI-assisted processing. Data figures use real data and code; a generative image model must not create or alter them. Conceptual AI-assisted figures need journal permission, disclosure in Methods/legend/cover letter, human verification of every label and relationship, a conceptual label, and a provenance record (tool/version/date/prompt/output hash/manual edits). Covers and graphical abstracts need editor permission. Check the journal policy before generation; policies differ and change. Full policy and negative list: ai-figures-and-visual-integrity.md.
 
-**Figure-level claim and evidence architecture.** Start from one Results-level question and one figure-level claim; state what could overturn it. Give panels distinct inferential roles (setup, representative example, primary quantitative evidence, baseline/control, decomposition, stratification, orthogonal validation, perturbation/stress test, boundary/failure case, mechanistic evidence). Prefer role diversity over metric diversity; the same metric re-plotted with a new seed or threshold is one role, not four. Use a chain: establish → compare/control → stress-test/discriminate → broaden → bound. Across figures, each figure should raise the next question rather than repeat “X performs well”.
+**Figure-level claim and evidence architecture.** Start from one Results-level question and one figure-level claim; state what could overturn it. Give panels distinct inferential roles (setup, representative example, primary quantitative evidence, baseline/control, decomposition, stratification, orthogonal validation, perturbation/stress test, boundary/failure case, mechanistic evidence). Prefer role diversity over metric diversity; a mirror layout of the same metric is one role, not four. Use a chain: establish → compare/control → stress-test/discriminate → broaden → bound. Across figures, each figure should raise the next question rather than repeat “X performs well”.
 
 **9.1 Contract.** Write the figure's one-sentence conclusion, archetype, panel map (each panel one question), evidence hierarchy, statistics, source-data mapping and reviewer risks before coding. Every panel answers a unique question; the hero panel gets the clearest axis and largest area; controls stay quieter.
 
@@ -295,7 +318,7 @@ Read figure-production.md, figure-craft-and-information-density.md and figure-st
 
 **9.7 Conceptual figures for Perspectives and theory papers.** Design one integrated composition per figure, not a collage of unrelated panels. Use a pure white background, flat vector-like artwork, no gradients/shadows/3D, a limited colour-blind-aware palette, at least 75% diagram area, fewer than about 45 words, lowercase panel letters and a "conceptual; no measured results" footer where appropriate. State the figure-level claim, panel roles, exact text inventory and scientific constraints before generating or drawing; check every label, equation, arrow and disclaimer. Detail: nature-perspective-production.md; brief template: assets/templates/conceptual-figure-brief.md.
 
-**9.6 Per-panel deliverables (optional).** When the target project or journal expects editable panels, the panel is the delivery unit: every declared panel is exported as its own editable SVG carrying its own letter, axes, ticks, marks and annotations; the composite must be reproducible from those panel exports. Deliver composite SVG, vector PDF, 600-dpi PNG and JPG, one SVG per panel, one SVG per shared legend or scale bar, the caption, a panel-definition record and an audit record. Automated collision counts are screening only: open every figure at final size and inspect panel by panel, then record the inspection. Labels sit in a margin label stack with leader lines when anchors are close, and the row gap must exceed the previous row's x tick labels plus the next row's title band.
+**9.6 Per-panel deliverables and supplementary figures.** For SEAL work, read seal-supplementary-figure-standard.md in full before creating or auditing any main or supplementary figure. The panel is the delivery unit: every declared panel is exported as its own editable SVG carrying its own letter, axes, ticks, marks and annotations; the composite must be reproducible from those panel exports. Deliver composite SVG, vector PDF, 600-dpi PNG and JPG, one SVG per panel, one SVG per shared legend or scale bar, the caption, a panel-definition record and an audit record. Automated collision counts are screening only: open every figure at final size and inspect panel by panel, and record the inspection. Labels sit in a margin label stack with leader lines when anchors are close; the row gap must exceed the previous row's x tick labels plus the next row's title band. The SEAL 28-figure release gate requires one regeneration pass with 8 pt ordinary text, 10 pt axis labels and panel letters, 0.4 pt axis/tick strokes, 0.9–1.1 data boxes, zero collisions, 600-dpi PNG, parseable SVG, one-page PDF, current panel SVG links and browser checks at desktop and mobile widths.
 
 ## 10. Revision, polishing, formatting and response
 
@@ -325,18 +348,21 @@ Read figure-production.md, figure-craft-and-information-density.md and figure-st
 - Chinese and English align paragraph by paragraph; bolding represents actual changes.
 - Closing paragraph names a specific scientific consequence, not a promise.
 - Zero-tolerance style ban passes: no template contrast ("not X but Y"), defensive disclaimers, self-limiting framing, outline-like transitions or their Chinese equivalents; the prose style checker reports no ERROR hits.
+- Defensive-argument gate passes: one limitation paragraph only, no abstract or conclusion caveat, every hedge survives the deletion test, the headline claim carries a number and a condition, and check_prose_style.py --gate reports no defensive/AI marker and no out-of-band rhythm metric (sentence-length CV, recap tails, triads, nominalisation, em dashes).
 - Perspective/theory package: one thesis, six-section logic, five-level evidence ledger, full paragraphs, no lists in the argument, boundaries in one paragraph, 2–3 bold single-sentence insights per subsection, conceptual figures with legends at the end, references before periods and placeholder fields marked.
 - Bilingual parity: identical claims, numbers, citations, certainty and emphasis; natural Chinese prose and matching academic English.
 - Text reads as a scientific argument a biologist can follow without decoding AI jargon.
 - Frontier and novelty claims have a dated search record and verified primary sources.
 - Consequential numerical claims agree with source data, calculations, tables, figures and units.
 - Response package covers every editor/reviewer item with action, location and remaining limitation.
-- Per-panel SVG deliverables exist for every declared panel when the project requires them; composite, PDF, 600-dpi PNG/JPG, caption and audit record agree.
+- Per-panel SVG deliverables exist for every declared panel; composite, PDF, 600-dpi PNG/JPG, caption and audit record agree; SEAL supplementary figures pass the 28-figure release gate.
 - Innovation is classified and positioned; the gap is a scientific unknown; competing explanations have discriminating predictions; why-this/why-now/why-broad are answerable without adjectives.
 - Editorial criteria, broad interest and journal fit are assessed in one sentence each; the cover letter and significance statement match the manuscript's actual claims.
 - Every result has an assigned destination; the shortest sufficient evidence chain is in the main text; SI does not hide conclusion-changing results; revision additions pass the deletion check.
 - Statistics define the independent unit, n, error definition, test, tail, correction and exact values; Reporting Summary, image integrity and data/code/materials statements are complete and consistent.
 - Figure panels have distinct inferential roles; figure order escalates; information density is adequate; the caption contract and journal stage-specific figure requirements are met.
+- HTML figures are audited at their final CSS width; source raster width, save dpi, displayed width and effective point size are recorded together, and nominal 10 pt text remains at least 10 pt after browser scaling.
+- Fixed grids use one physical canvas and complete-cell gutter contract. Long labels, legends and ordered length-by-condition combinations cannot widen a column; ordered variables remain continuous and use shape, colour and hatch for secondary conditions.
 - The submission package is complete for the recorded stage; missing facts are marked, not invented.
 - AI use follows the target-journal policy: no AI authorship, no fabrication, no confidential uploads, disclosed where required, every AI-suggested citation/number verified.
 - AI writing negative list passes: no fabricated references/data/results, no citation manipulation, no paper-mill patterns, no undisclosed translation/ghostwriting, no detection evasion.
@@ -346,3 +372,57 @@ Read figure-production.md, figure-craft-and-information-density.md and figure-st
 - Section craft passes the abstract hidden-names test, Introduction reverse outline, Results claim ladder and Discussion synthesis audit.
 - Perspective work has one intellectual centre, a discovery sequence, marked evidence status and a concrete ending.
 - Files exist, are the audited versions, and unresolved items are reported.
+
+## 13. v1.2.6.6 projection, structural cartoon and HTML bold gates
+
+- Projection panels take limits from the full data extent and record
+  clipped_point_fraction = 0; PCA/t-SNE/UMAP use equal x/y unit length, equal spans and a
+  square axes box.
+- Fold-evidence panels use cartoon/ribbon geometry, never surface only; non-focal loops and
+  contexts are grey at 20% transparency, and each structure tile carries an auditable label
+  band that never covers molecule ink.
+- Before rendering, validate the structure file: element columns, guide atoms equal to
+  C-alpha count, non-empty FASTA. Rewrite element columns and record SHA-256 when validation
+  fails.
+- In HTML reports, bold the topic sentence of each Results subsection, decisive numbers and
+  logical turns, the abstract's conclusion and each figure caption's inference clause (1-3
+  spans per paragraph, never the whole paragraph).
+- Display figures as 600 dpi raster and link SVG/PDF separately; confirm the page paints the
+  figure by screenshot at its vertical position, not only by naturalWidth.
+
+## 14. v1.2.6.7 evidence-density and visual-finish gates
+
+- Every analytical panel has at least three evidence layers (observations, distribution, estimate with CI, reference, effect size, contrast, structural annotation); the count is audited.
+- No means-only bars and no single series without a band, points or rug; a two-bar panel requires a companion distribution in the same figure.
+- Do not repeat the same chart across algorithm, rule and environment without adding a distribution, contrast or mechanism layer.
+- No default black whiskers or edges; use semantic fills and an alpha hierarchy.
+- Each figure row carries a distinct evidence role; dimension-swap repetitions fail.
+
+## 15. v1.2.6.8 data-extent gates
+
+- Every quantitative panel covers the full data extent on both axes; hard-coded stale limits fail.
+- Threshold views either extend to the full range or carry a full-range companion in the same panel.
+- The panel-extent audit records clipped-point counts and overshoot; all panels pass.
+- Inverted, log and image/matrix axes are audited in value space; legend proxies and default collection offsets are ignored.
+- After changing limits, explicit ticks replace auto-locators that would fall outside the view.
+
+## 16. v1.2.6.8 addendum gates
+
+- Audit every data-artist path (PolyCollection, LineCollection, patches, images), not only scatter offsets.
+- Violin/KDE bodies extend beyond the observed data range by about 1.5 bandwidths; flat caps fail.
+- Density contour grids extend about 6% beyond the observed data range.
+- Points at 0, 1 or thresholds receive a marker margin of 2–4% of the axis span.
+- Rendered rasters are checked at final display width; HTML serves versioned raster URLs or no-store headers.
+
+## 17. v1.2.7.0 defensive-writing control and AI-prose gates
+
+A manuscript fails stylistically for two reasons that look different and are cured by one decision: it argues against itself (defensive writing), or it argues nothing in particular (generated prose). Decide what the paper wins, then spend every paragraph on it. Argument-level rules: defensive-writing-and-argument-selection.md; surface patterns: writing-diagnostics.md section 3A and 4A.
+
+- **Argument selection precedes wording.** Name the one claim this paper alone can make, with its measure and its condition. If "what do we win / by how much / on what ground" has no number and no condition, the analysis is unfinished; prose cannot repair it.
+- **Space follows argument, not effort.** Every experiment carries one duty — existence, mechanism, regime, exclusion or value. Experiments with no duty are deleted, merged or demoted. Chronology ("we first did X, then tried Y") is banned; failed branches appear only when they exclude an alternative a reader would hold.
+- **One limitation paragraph.** At most three sentences, condition -> scope -> consequence, at the end of the discussion. Zero limitation sentences in the abstract and in the conclusion; a caveat that qualifies one result stays in that result's sentence.
+- **Deletion test for every hedge.** Remove it, then ask whether a careful reader could now be misled about what was measured. If not, delete it; if so, keep it and make it specific. Rhetorical hedging is banned; epistemic calibration is mandatory.
+- **The ban is never a licence.** No claim without evidence, no deletion of a limitation that changes the reading, no null rewritten as a positive, no generalisation past the system, no hidden comparator. Statistics, reporting integrity and AI-use rules override every stylistic preference in this skill.
+- **Rhythm is part of the diagnosis.** Targets: sentence-length CV 0.30-0.65; recap tails <=1 per 1,000 words; triads <=2 per 500 words; nominalisation <=12% of content words; em dashes <=2 per 1,000 words; hedge markers <=4 per 1,000 words (English) and <=3 per 1,000 characters (Chinese); limitation markers <=2 per 1,000 words. Run python tools/check_prose_style.py --gate <file>; a defect is an ERROR hit, a defensive/AI marker or an out-of-band metric. Use --genre perspective for proposals and theory papers, where proposal modality is calibration rather than hedging, and --genre report for reports, where the metrics are informational.
+- **Scope.** Manuscript, abstract, cover letter, response letter, figure text, reports and Chinese drafts. Chinese-specific forms (self-deprecating 谦辞, procedural narration, hollow modifiers, four-character parallelism) are listed in the Chinese reference and checked by the same gate.
+

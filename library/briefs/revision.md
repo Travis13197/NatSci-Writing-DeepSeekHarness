@@ -28,7 +28,7 @@
 
 ## 配套资源
 
-库版本：NatSci-Writing-skills 1.2.6.2（中英双语）。中文回复信优先读中文套（`lang: "zh"`）。
+库版本：NatSci-Writing-skills 1.2.7.0（中英双语）。中文回复信优先读中文套（`lang: "zh"`）。
 
 - 规则：references/revision-and-response.md（§1 推理修复、§4 证据强度短语库、§5 风格护栏、§6 回复包、§7 审稿人模拟、§8 期刊格式检查）、editorial-and-submission.md（编辑标准与投稿包）、main-text-and-information-architecture.md（改到哪里、篇幅怎么让）。
 - 模板：templates/response-letter.md、terminology-and-decisions.md、editing-scope-and-change-log.md（修订范围与 change log）。

@@ -113,8 +113,8 @@ const inventory = {
   },
 }
 const briefs = listMd(join(pkgDir, 'library/briefs'))
-check('English library 1.2.6.2', /version: "1\.2\.6\.2"/.test(inventory.en.guide))
-check('Chinese library 1.2.6.2', /version: "1\.2\.6\.2"/.test(inventory.zh.guide))
+check('English library 1.2.7.0', /version: "1\.2\.7\.0"/.test(inventory.en.guide))
+check('Chinese library 1.2.7.0', /version: "1\.2\.7\.0"/.test(inventory.zh.guide))
 for (const lang of LANGS) {
   const set = inventory[lang]
   check(`${lang} references present`, set.references.length >= 20, String(set.references.length))

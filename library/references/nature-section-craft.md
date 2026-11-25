@@ -56,7 +56,7 @@ Results is an escalating evidence chain, not a chronological notebook or a dashb
 - Keep a bounded local explanation in Results when it directly resolves the experiment just reported; reserve cross-result, literature and broader implications for Discussion.
 - Keep robustness in the main text when it establishes or materially bounds a claim; route reassurance-only checks to Extended Data/SI.
 - Do not bury conclusion-changing negative results or boundary conditions in SI.
-- Figure order follows claim escalation: Fig. 1 what it is -> Fig. 2 is the evaluation/resource credible -> Fig. 3 does the phenomenon exist -> Fig. 4 does it beat alternatives -> Fig. 5 does the claim survive harder conditions -> Fig. 6 what mechanism/generality/boundary follows. This is an archetype, not a fixed six-figure template.
+- Figure order mirrors claim escalation: Fig. 1 what it is -> Fig. 2 is the evaluation/resource credible -> Fig. 3 does the phenomenon exist -> Fig. 4 does it beat alternatives -> Fig. 5 does the claim survive harder conditions -> Fig. 6 what mechanism/generality/boundary follows. This is an archetype, not a fixed six-figure template.
 - If two figures can both be summarised as "X performs well", merge them, demote the weaker evidence, or make the later figure ask a deeper question.
 
 ## 4. Discussion: synthesis, not replay

@@ -18,6 +18,7 @@
 3. 先写 Results（每个小节按「问题 → 设计 → 观察与统计 → 推论」），再写 Introduction 与 Conclusion、Discussion、Methods，最后写 Abstract 与 Title。
 4. 一致性检查：数字、单位、图与 panel 引用、引用顺序、时态、论断强度。
 5. 对抗式自审：站在审稿人立场写出最强反驳，并决定补证据还是收窄论断。
+5b. 防御性审计：全文只保留一段局限（≤3 句，条件→范围→后果），摘要与结论不留 caveat；每处限定过删除测试——删掉后读者会不会被误导，会则保留并写具体，不会则删。
 6. 交付稿件包：title page、abstract、main text、methods、references、legends、extended data 清单、statements、假设清单、change log。
 
 ## 验收（任一不满足即未完成）
@@ -28,12 +29,13 @@
 - 摘要 ≤200 词（Nature）或约 125 词（Science），末句给出能力或后果，而不是承诺。
 - 缺失输入以显式占位符呈现，而不是被平滑掉。
 - 结论强度与证据类型匹配：直接证据用 show / demonstrate / reveal，推断用 indicate / suggest / consistent with，推测用 may / could。
+- 风格门禁通过：`python tools/check_prose_style.py <稿件> --gate` 无 ERROR、无防御性/AI 标记命中、无节奏度量越界（提案类用 `--genre perspective`）。
 - 投稿前跑两项审核并把结果单列：统计与报告诚信（n、独立单元、检验、图像诚信）、编辑契合度（期刊定位、篇幅、结论强度）。
 
 ## 配套资源
 
-库版本：NatSci-Writing-skills 1.2.6.2（中英双语）。中文稿件优先读中文套（`lang: "zh"`），英文稿件读英文套。
+库版本：NatSci-Writing-skills 1.2.7.0（中英双语）。中文稿件优先读中文套（`lang: "zh"`），英文稿件读英文套。
 
-- 规则：references/manuscript-production.md、journal-style-evidence.md、writing-diagnostics.md、main-text-and-information-architecture.md（正文/图注/SI 分工、篇幅预算）、nature-section-craft.md（章节 move 序列）、statistics-and-reporting-integrity.md、editorial-and-submission.md、innovation-and-broad-interest.md、literature-search-and-citation.md。
+- 规则：references/manuscript-production.md、journal-style-evidence.md、writing-diagnostics.md、defensive-writing-and-argument-selection.md（发布会原则、三问测试、实验职责、局限只留一段）、main-text-and-information-architecture.md（正文/图注/SI 分工、篇幅预算）、nature-section-craft.md（章节 move 序列）、statistics-and-reporting-integrity.md、editorial-and-submission.md、innovation-and-broad-interest.md、literature-search-and-citation.md。
 - 模板：templates/manuscript-outline.md、terminology-and-decisions.md、innovation-canvas.md、editorial-audit.md、reporting-and-statistics-checklist.md、cover-letter-and-submission.md、data-and-code-statements.md、data-code-materials-checklist.md；Perspective 用 perspective-manuscript-outline.md。
 - 语言：中文成稿用中文套的 language-and-taste-zh.md 与 writing-diagnostics-zh.md，不要把英文脚手架直译成中文。

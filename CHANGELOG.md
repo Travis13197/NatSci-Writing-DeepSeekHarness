@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.4 — 2026-11-25
+
+- Bundled library upgraded from NatSci-Writing-skills **1.2.6.2** to **1.2.7.0**:
+  the English set now carries 32 reference rules and the Chinese set 34 (66 total),
+  including the new `defensive-writing-and-argument-selection.md` / `-zh` and the six
+  rules that were previously excluded from the bundle.
+- `SKILL.md` in both language sets is now the released 1.2.7.0 guide verbatim, so every
+  `references/…` path cited by the guide resolves on disk.
+- The manuscript and polish briefs gained the defensive-argument gate: one limitation
+  paragraph only, a deletion test for every hedge, and
+  `python tools/check_prose_style.py <file> --gate` in acceptance.
+- `index.js`: `LIBRARY_VERSION` 1.2.7.0; reference notes cover the newly bundled rules.
+- Locales report 66 rules (32 English, 34 Chinese) instead of 53.
+
+
 ## 1.1.3 — 2026-11-24
 
 - `distribution/index.json` can now list a **Git source** (`git+…github…git#<commit>`), so

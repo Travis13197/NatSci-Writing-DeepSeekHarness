@@ -30,7 +30,7 @@
 
 ## 配套资源
 
-库版本：NatSci-Writing-skills 1.2.6.2（中英双语）。
+库版本：NatSci-Writing-skills 1.2.7.0（中英双语）。
 
 - 证据纪律与措辞：references/manuscript-production.md（论断—证据—边界）、writing-diagnostics.md（去掉评价性形容词与模板式对比）、language-and-taste.md。
 - 图件规格：references/figure-standards-nature-science.md（尺寸、字号、统计呈现）、figure-craft-and-information-density.md（每页信息密度）。

@@ -21,12 +21,12 @@ window.__ModuleLoader__.load({
     const ZH = {
       panel: '写作台',
       title: 'NatSci 写作台',
-      subtitle: '论文、学术报告、投稿图件与审稿回复，按 Nature/Science 标准交付。中英双语规则库 1.2.6.2。',
-      chipRulesEn: '26 份英文规则',
-      chipRulesZh: '27 份中文规则',
+      subtitle: '论文、学术报告、投稿图件与审稿回复，按 Nature/Science 标准交付。中英双语规则库 1.2.7.0。',
+      chipRulesEn: '32 份英文规则',
+      chipRulesZh: '34 份中文规则',
       chipTemplates: '19 个模板',
       chipCode: '2 份起手代码',
-      chipLicense: 'NatSci-Writing-skills 1.2.6.2 · Apache-2.0',
+      chipLicense: 'NatSci-Writing-skills 1.2.7.0 · Apache-2.0',
       scenarios: '起手场景',
       scenariosHint: '每张卡会把一条可编辑的起始提示词填进新会话的输入框，发送前可以改。',
       newSession: '新建会话并填入',
@@ -57,12 +57,12 @@ window.__ModuleLoader__.load({
     const EN = {
       panel: 'Studio',
       title: 'NatSci writing studio',
-      subtitle: 'Manuscripts, academic reports, submission figures and reviewer responses at Nature/Science standard. Bilingual library 1.2.6.2.',
-      chipRulesEn: '26 English rules',
-      chipRulesZh: '27 Chinese rules',
+      subtitle: 'Manuscripts, academic reports, submission figures and reviewer responses at Nature/Science standard. Bilingual library 1.2.7.0.',
+      chipRulesEn: '32 English rules',
+      chipRulesZh: '34 Chinese rules',
       chipTemplates: '19 templates',
       chipCode: '2 starter scripts',
-      chipLicense: 'NatSci-Writing-skills 1.2.6.2 · Apache-2.0',
+      chipLicense: 'NatSci-Writing-skills 1.2.7.0 · Apache-2.0',
       scenarios: 'Start a deliverable',
       scenariosHint: 'Each card fills an editable starter prompt into a new Session. Edit it before sending.',
       newSession: 'New Session, prompt ready',
@@ -345,6 +345,7 @@ window.__ModuleLoader__.load({
       'revision-and-response.md',
       'journal-style-evidence.md',
       'writing-diagnostics.md',
+      'defensive-writing-and-argument-selection.md',
       'editorial-and-submission.md',
       'innovation-and-broad-interest.md',
       'main-text-and-information-architecture.md',
@@ -367,6 +368,11 @@ window.__ModuleLoader__.load({
       'research-and-language.md',
       'html-and-data-verification.md',
       'academic-prompt-zh.md',
+      'dimension-annotation.md',
+      'mirror-world-case-study.md',
+      'seal-project.md',
+      'seal-supplementary-figure-standard.md',
+      'translation-validation.md',
     ];
 
     /** Chinese reference documents, in catalog order (names differ from the English set). */
@@ -398,6 +404,13 @@ window.__ModuleLoader__.load({
       'statistics-and-reporting-integrity-zh.md',
       'structural-figures-baker-standard.md',
       'writing-diagnostics-zh.md',
+      'defensive-writing-and-argument-selection-zh.md',
+      'dimension-annotation.md',
+      'figure-r50-regression-checklist.md',
+      'mirror-world-case-study-zh.md',
+      'seal-project.md',
+      'seal-supplementary-figure-standard.md',
+      'translation-validation.md',
     ];
 
     /** Example tool calls shown in the page. */
