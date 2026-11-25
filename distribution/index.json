@@ -41,11 +41,11 @@
       "versions": [
         {
           "version": "1.1.4",
-          "publishTimestamp": 1795597609,
+          "publishTimestamp": 1795597629,
           "source": {
             "type": "git",
             "url": "https://github.com/Travis13197/NatSci-Writing-DeepSeekHarness",
-            "commit": "17cc45ba53e16e71c6149e152864b0b2ce1ca178"
+            "commit": "d06a5f37cad47678cb159e3d1a78011d635c9333"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.5 <0.3.0-0"
