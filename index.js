@@ -1,7 +1,7 @@
 /**
  * Host half of the NatSci writing studio bundle.
  *
- * It serves the bundled NatSci-Writing-skills 1.2.7.0 library to the model
+ * It serves the bundled NatSci-Writing-skills 1.2.8.0 library to the model
  * through one read-only tool: deliverable briefs, document templates, figure
  * starter code and the reference rules behind them, in English and Chinese.
  * Nothing is written, fetched or executed; every answer comes from the files
@@ -17,7 +17,7 @@ const packageDir = fileURLToPath(new URL('.', import.meta.url))
 const libraryDir = join(packageDir, 'library')
 
 /** Library version this bundle ships, kept in sync with the bundled SKILL.md. */
-const LIBRARY_VERSION = '1.2.7.0'
+const LIBRARY_VERSION = '1.2.8.0'
 
 /** Deliverable modes the studio recognises, in workflow order. */
 const MODES = [
@@ -99,6 +99,7 @@ const REFERENCE_NOTES = {
   'html-and-data-verification.md': '完整 HTML 修订、数据真实性与计算核验。',
   'academic-prompt-zh.md': '可复用的中文任务提示词。',
   'defensive-writing-and-argument-selection.md': '防御性写作控制：发布会原则、论证取舍、实验职责、修辞减弱与校准的边界、度量门。',
+  'journal-templates-and-assembly.md': '期刊模板与稿件组装：Nature/Science 规格、模板生成与导入、组装器、格式检查、六道投稿门。',
   'mirror-world-case-study.md': '镜像世界假说 Perspective 的完整范例与编辑过程。',
   'seal-project.md': 'SEAL 项目专用约定与风格。',
   'seal-supplementary-figure-standard.md': 'SEAL 补充图标准与 28 图发布审核。',

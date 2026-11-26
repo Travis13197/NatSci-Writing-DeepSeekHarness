@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.5 — 2026-11-26
+
+- Bundled library upgraded to NatSci-Writing-skills **1.2.8.0**: the English set now carries 33 reference rules and the Chinese set 35, including `journal-templates-and-assembly.md` / `-zh`.
+- The library now ships `assets/journal-templates/` (Nature and Science specs, generated .docx/.tex templates, source registry), so the studio can point a session at a journal format and its assembly rules.
+- `index.js` `LIBRARY_VERSION` 1.2.8.0; client rule index and chip counts follow the library (33/35); locale strings updated.
+
+
 ## 1.1.4 — 2026-11-25
 
 - Bundled library upgraded from NatSci-Writing-skills **1.2.6.2** to **1.2.7.0**:
