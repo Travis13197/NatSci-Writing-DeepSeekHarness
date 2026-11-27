@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.6 — 2026-11-27
+
+- Bundled library upgraded to NatSci-Writing-skills **1.2.8.2**: 35 English and 37 Chinese reference rules, adding `results-architecture.md` and `results-heading-language.md` (and their Chinese editions).
+- SKILL sections 19 and 20 arrive with the library: Results heading language and Results as a discovery narrative.
+- `index.js` `LIBRARY_VERSION` 1.2.8.2; client rule index and chip counts 35/37; locale strings updated.
+
+
 ## 1.1.5 — 2026-11-26
 
 - Bundled library upgraded to NatSci-Writing-skills **1.2.8.0**: the English set now carries 33 reference rules and the Chinese set 35, including `journal-templates-and-assembly.md` / `-zh`.
