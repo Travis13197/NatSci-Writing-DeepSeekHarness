@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.7 — 2026-11-27
+
+- Bundled library upgraded to NatSci-Writing-skills **1.2.8.3** (documentation-synchronization release; the SKILL guides and reference sets are unchanged in substance, version strings aligned).
+- `index.js` `LIBRARY_VERSION` 1.2.8.3; locale and client strings aligned.
+
+
 ## 1.1.6 — 2026-11-27
 
 - Bundled library upgraded to NatSci-Writing-skills **1.2.8.2**: 35 English and 37 Chinese reference rules, adding `results-architecture.md` and `results-heading-language.md` (and their Chinese editions).

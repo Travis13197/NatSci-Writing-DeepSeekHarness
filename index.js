@@ -1,7 +1,7 @@
 /**
  * Host half of the NatSci writing studio bundle.
  *
- * It serves the bundled NatSci-Writing-skills 1.2.8.2 library to the model
+ * It serves the bundled NatSci-Writing-skills 1.2.8.3 library to the model
  * through one read-only tool: deliverable briefs, document templates, figure
  * starter code and the reference rules behind them, in English and Chinese.
  * Nothing is written, fetched or executed; every answer comes from the files
@@ -17,7 +17,7 @@ const packageDir = fileURLToPath(new URL('.', import.meta.url))
 const libraryDir = join(packageDir, 'library')
 
 /** Library version this bundle ships, kept in sync with the bundled SKILL.md. */
-const LIBRARY_VERSION = '1.2.8.2'
+const LIBRARY_VERSION = '1.2.8.3'
 
 /** Deliverable modes the studio recognises, in workflow order. */
 const MODES = [
